@@ -1,0 +1,42 @@
+body{
+    height: 100%;
+    background-color: #04547c;
+}
+.bg-blue{
+    background-color: #04547c;
+}
+.bg-grey{
+    background-color:#333333;
+}
+.hfooter-sb{
+    height: 5rem;
+}
+.w_btn-sb{
+    width: 51%;
+}
+
+.sb_hover:hover{
+background-color:rgb(127, 1, 129) ;
+} 
+.sb-bg-grey{
+    background-color: rgb(39, 33, 32);
+}
+
+.sb-bi{
+    transform: rotate(90deg);
+    font-size: 50px;
+}
+button.btn.sb-morado{
+    color:rgb(163, 0, 142);
+    font-weight: bolder;
+}
+
+.sb-color-blue{
+    color:#04547c;
+}
+.sb-size-icon-1{
+    font-size:25px;
+}
+.sb-size-icon-2{
+    font-size:45px;
+}

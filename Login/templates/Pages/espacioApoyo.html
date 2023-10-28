@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap v5.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Estilos Generales-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/general.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/proyectos.css' %}">
+
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'vendor/glightbox/css/glightbox.min.css' %}">
+
+    <title>Espacio de Apoyo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav  col-md-12 ">
+                    <li class="col nav-item text-center sb_hover">
+                        <i class="bi bi-house-door-fill text-light"></i>
+                        <a href="{% url 'home_page' %}" class="text-light nav-link ">Inicio</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-boxes text-light"></i>
+                        <a href="{% url 'projects' %}" class=" text-light nav-link active">Proyectos</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-bag-plus text-light"></i>
+                        <a href="{% url 'jobs' %}" class=" text-light nav-link">Bolsa de Trabajo</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <a href="{% url 'help' %}" class=" text-light nav-link">Espacio de Apoyo</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-box-arrow-right text-light"></i>
+                        <a href="{% url 'logOut' %}" class=" text-light nav-link">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-light text-center mt-md-5 mt-sm-5 mb-md-4">
+        <h1>Facilita tu Progreso Académico</h1>
+        <p>Encuentra plantillas de documentos y recursos que te guiarán en tu trayectoria educativa hacia el éxito</p>
+    </header>
+    <main class="bg-light container-fluid pt-md-1 pt-xxl-5 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5">
+        <section class="container">
+            <article class="">
+                <div class="row row-cols-1 rows-cols-md-2 row-cols-xl-3 rows-cols-lg-2 g-4 mt-2">
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>CV's</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Es un resumen detallado de la educación, experiencia laboral, habilidades y logros de una persona, utilizado en solicitudes de empleo o para presentar antecedentes personales y profesionales.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/curriculum-vitae.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/curriculum-vitae.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Documento de Aceptación</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Generalmente se refiere a un documento que certifica que alguien ha sido aceptado en una institución educativa, un trabajo, un programa o una solicitud en particular.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/aceptación-proyecto.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/aceptación-proyecto.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Documento de Clasificación</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Este documento categoriza o clasifica información, objetos o individuos en grupos o categorías específicas basadas en ciertos criterios.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/clasificacion.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/clasificacion.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Documento de Tipificación</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">En el contexto de datos o muestras, esto se refiere a un documento que detalla cómo se han categorizado o etiquetado los elementos del proyecto para su posterior análisis.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/tipificacion.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/tipificacion.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Documento de Identificación</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un documento oficial emitido por una institución educativa que certifica la identidad de un individuo y su afiliación académica, utilizado para propósitos de registro y participación en proyectos y actividades educativas.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/identificacion.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/identificacion.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Aval Educativo</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un aval o certificado que respalda la formación o educación de una persona, como un título académico, certificado o diploma.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/aval-educativo.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/aval-educativo.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Brief del Proyecto</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un resumen detallado que describe los objetivos, alcance, presupuesto, plazos y requisitos de un proyecto antes de su inicio.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/brief.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/brief.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-pptx me-md-2 sb-size-icon-1"></i>Lienzo Canva</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Es una plataforma en línea que permite la creación de diseños gráficos, presentaciones, publicaciones en redes sociales y otros materiales visuales de una manera fácil y accesible.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/lienzo-canva.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/lienzo-canva.pptx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Documento Final</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un extenso informe académico original que representa la culminación de una investigación exhaustiva y que demuestra la comprensión y dominio del tema en cuestión, presentado como requisito final para la obtención de un título universitario o grado académico específico.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/documento-final.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/documento-final.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-docx me-md-2 sb-size-icon-1"></i>Propuesta Financiera</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un documento que presenta detalles financieros, incluyendo presupuestos, estimaciones de costos y fuentes de financiamiento para un proyecto o iniciativa.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/propuesta-financiera.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/propuesta-financiera.docx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-filetype-pptx me-md-2 sb-size-icon-1"></i>Presentación</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Se refiere a una presentación creada en Microsoft PowerPoint o una aplicación similar, que suele contener diapositivas con texto, imágenes y gráficos para comunicar información de manera visual.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/media/assets/presentacion.pdf" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Instrucciones</a>
+                                <a href="/media/assets/presentacion.pptx" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h6 class="card-title"><i
+                                        class="bi bi-youtube me-md-2 sb-size-icon-1"></i>Video</h6>
+                            </div>
+                            <div class="card-body" style="height: 200px; overflow: auto;">
+                                <p class="card-text">Un video que presenta un proyecto, sus objetivos, logros y detalles de una manera audiovisual, a menudo utilizado en presentaciones, informes o divulgación de proyectos.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.youtube.com/watch?v=P2LwuF7zn9c" target="_blank"
+                                    class="btn btn-light border border-secondary sb-morado">Ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <br><br>
+        </section>
+    </main>
+    <footer class="bg-blue text-light text-center hfooter-sb">
+        <p class="pt-md-4">Copyright 2023 Sinergia - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/proyectosscript.js' %}"></script>
+</body>
+
+</html>

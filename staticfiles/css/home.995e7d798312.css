@@ -1,0 +1,49 @@
+.sb-text-nameRol{
+    margin-left: 13%;
+    padding-top: 35px;
+}
+
+.sb-image{
+    position: absolute;
+    top:245px;
+    margin-left: 5%;
+    width:150px;
+    height:150px;   
+}
+@media (min-width: 1400px) and (max-width: 1930px) {
+    .sb-text-nameRol{
+        margin-left: 18%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .sb-text-nameRol{
+        margin-left: 20%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .sb-text-nameRol{
+        margin-left: 22%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .sb-image{
+        top:185px;
+        width:120px;
+        height:120px;   
+    }
+    .sb-text-nameRol{
+        margin-left: 22%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .sb-image{
+        top:200px;
+        width:80px;
+        height:80px;   
+    }
+    .sb-text-nameRol{
+        margin-left: 22%;
+        padding-top: 35px;
+    }
+}

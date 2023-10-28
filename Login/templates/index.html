@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap v5.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Estilos Generales-->    
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/general.css' %}">
+    <title>Inicio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav  col-md-12 ">
+                    <li class="col nav-item text-center sb_hover">
+                        <i class="bi bi-house-door-fill text-light"></i>
+                        <a href="{% url 'inicio' %}" class="text-light nav-link ">Inicio</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-person-fill text-light"></i>
+                        <a href="{% url 'login_page' %}" class=" text-light nav-link active">Iniciar Sesión</a>
+                    </li>
+                    <li class="col nav-item sb_hover text-center">
+                        <i class="bi bi-person-fill text-light"></i>
+                        <a href="{% url 'singUp' %}" class=" text-light nav-link">Registrate</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- <header class="bg-blue pb-md-5 mb-md-5 mt-5">
+        <div class="text-center text-light">
+            <h1>Proyecto Sinergia</h1>
+            <p>Colaboración y Sinergia entre estudiantes y empresas</p>
+        </div>
+    </header> -->
+    <main class="bg-grey text-light py-5">
+        <section class="container">
+            <div class="text-center">
+                <img src="media/assets/logo.png" alt="Tu Logotipo" class="logo-img"  style="height: 200px; overflow: auto;">
+            </div>
+            <h2>¿Quienes somos?</h2>
+            <article class="mt-md-5">
+                <h5>Misión</h5>
+                <p>En Sinergia, nos dedicamos apasionadamente a fomentar la conexión entre jóvenes estudiantes, universitarios y empresas destacadas. A través de nuestra plataforma web premium, proporcionamos un espacio dinámico donde los estudiantes pueden mostrar sus proyectos académicos y habilidades excepcionales. Al mismo tiempo, las empresas pueden descubrir talentos jóvenes y proyectos innovadores que se alinean perfectamente con sus necesidades. Nuestra misión es impulsar el crecimiento profesional y académico al brindar un entorno donde la innovación, la colaboración y las oportunidades se fusionan con la excelencia.</p>
+            </article>
+            <article class="mt-md-5">
+                <h5>Visión</h5>
+                <p>Nuestra visión en Sinergia es convertirnos en la plataforma líder a nivel nacional que reúna a estudiantes y empresas para colaborar en proyectos académicos y profesionales de vanguardia. Nos esforzamos por ser reconocidos por nuestro compromiso inquebrantable con la excelencia y la calidad de las conexiones que forjamos. Aspiramos a dejar una huella significativa en el mundo de la educación y la industria, ofreciendo oportunidades sin igual para que cada estudiante canalice su conocimiento hacia proyectos trascendentales. ¡En Sinergia, las empresas encuentran el talento que necesitan para prosperar!</p>
+            </article>
+            <article class="mt-md-5">
+                <h5>Valores</h5>
+                <p>En Sinergia, nos guiamos por nuestros valores fundamentales: Integridad, Innovación, Colaboración, Excelencia y Oportunidad. Estos pilares están arraigados en todo lo que hacemos, impulsándonos a crear un entorno donde la integridad es la base, la innovación es la fuerza motriz, la colaboración es la clave del éxito, la excelencia es la norma y la oportunidad es la piedra angular de nuestro propósito.</p>
+            </article>
+            
+        </section>
+    </main>
+    <footer class="bg-blue text-light text-center hfooter-sb">
+        <p class="pt-md-4">Copyright 2023 Sinergia - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</html>
